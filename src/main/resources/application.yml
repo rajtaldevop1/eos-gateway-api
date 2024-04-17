@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eos-registry-api-service:8761/eureka/ 
+      defaultZone: http://10.108.18.33:8761/eureka/ 
     registerWithEureka: true
     fetchRegistry: true
     enabled: true
@@ -24,7 +24,7 @@ spring:
   boot:
        admin:
             client:
-                url: http://eos-micro-services-admin-service:8090
+                url: http://10.103.94.172:8090
                 instance:
                   service-base-url: http://eos-gateway-api-service:5555
   application:

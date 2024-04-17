@@ -85,7 +85,8 @@ spec:
           container('build') {
                 stage('Deploy Artifacts') {
                   // sh 'chmod 777 /home/jenkins/agent/workspace/eos-registry-api_main/mvnw'
-                    sh 'chmod 777 /home/jenkins/agent/workspace/eos-gateway-api/mvnw'
+                    //sh 'chmod 777 /home/jenkins/agent/workspace/eos-gateway-api/mvnw'
+                    sh 'chmod -R 777 /home/jenkins/agent/workspace/eos-gateway-api*'
                     rtMavenRun (
                     tool: "java", // Tool name from Jenkins configuration
                     useWrapper: true,

@@ -26,7 +26,7 @@ spring:
             client:
                 url: http://10.103.94.172:8090
                 instance:
-                  service-base-url: http://eos-gateway-api-service:5555
+                  service-base-url: http://10.108.2.85:5555
   application:
     name: eos-gateway-api
   cloud:
